@@ -31,7 +31,7 @@ export default function PostsPage(){
      return matchsearch && matchstatus
     })
      
-    filter.sort(()=>{
+    filter.sort((a , b)=>{
       switch(sortBy){
         case "newest":
         return b.createdAt - a.createdAt;
