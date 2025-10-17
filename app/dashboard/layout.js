@@ -36,7 +36,7 @@ const sidebarItems = [
 ];
 
 
-function layout({children}) {
+function Layout({children}) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const pathname = usePathname();
 
@@ -163,4 +163,4 @@ function layout({children}) {
   )
 }
 
-export default layout
+export default Layout
